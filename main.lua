@@ -45,9 +45,9 @@ local sendTestMessage = function(url)
     sendWebhook(
         url, {
             embeds = {{
-                title = 'This is a test',
-                description = `succeed`,
-                color = #000000
+                title = 'This is a test message',
+                description = `You'll be notified to this webhook`,
+                color = 0x00ff00
             }}
         }, (Toggles.PingInMessage and Toggles.PingInMessage.Value)
     )
@@ -216,7 +216,7 @@ end)()
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/main/LinoriaLib/Library.lua'))()
 
 local Window = Library:CreateWindow({
-    Title = ' 😳 Swordburst 2',
+    Title = 'Bluu 😳 Swordburst 2',
     Center = true,
     AutoShow = true,
     Resizable = true,
