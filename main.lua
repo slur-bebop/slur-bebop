@@ -2173,7 +2173,7 @@ local Rarities = { 'Common', 'Uncommon', 'Rare', 'Legendary', 'Tribute' }
 
 Drops:AddDropdown('AutoDismantle', { Text = 'Auto dismantle', Values = Rarities, Multi = true, AllowNull = true })
 
-Drops:AddInput('DropWebhook', { Text = 'Drop webhook', Placeholder = 'https://discord.com/api/webhooks/' })
+Drops:AddInput('DropWebhook', { Text = 'Drop webhook', Placeholder = 'https://discord.com/api/webhooks/1370287538194878495/b_ok-dTTW1UQXra2zAPKiTI2FkML82aitnZfpRblv3RDkqN0V_4HRlXi0d20WJNAetEs' })
 :OnChanged(sendTestMessage)
 
 Drops:AddToggle('PingInMessage', { Text = 'Ping in message' })
