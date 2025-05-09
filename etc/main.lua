@@ -218,7 +218,7 @@ end)()
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/main/LinoriaLib/Library.lua'))()
 
 local Window = Library:CreateWindow({
-    Title = 'butter bear lover',
+    Title = '⚔️',
     Center = true,
     AutoShow = true,
     Resizable = true,
