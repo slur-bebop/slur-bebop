@@ -23,13 +23,13 @@ local sendWebhook = (function()
 
         body.content = ping and '@everyone' or nil
         body.username = 'ken'
-        body.avatar_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/content%20not%20found.jpg
+        body.avatar_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/etc/content%20not%20found.jpg
 '
         body.embeds = body.embeds or {{}}
         body.embeds[1].timestamp = DateTime:now():ToIsoDate()
         body.embeds[1].footer = {
             text = 'ken',
-            icon_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/content%20not%20found.jpg
+            icon_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/etc/content%20not%20found.jpg
 '
         }
 
@@ -47,8 +47,8 @@ local sendTestMessage = function(url)
     sendWebhook(
         url, {
             embeds = {{
-                title = 'อย่าปัญญาอ่อน',
-                description = `อย่าคิดถึงคนเก่า`,
+                title = 'TEST',
+                description = `?`,
                 color = #C0C0C0
             }}
         }, (Toggles.PingInMessage and Toggles.PingInMessage.Value)
@@ -2766,12 +2766,12 @@ Menu:AddLabel('Menu keybind'):AddKeyPicker('MenuKeybind', { Default = 'End', NoU
 
 Library.ToggleKeybind = Options.MenuKeybind
 
-local ThemeManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/main/LinoriaLib/addons/ThemeManager.lua'))()
+local ThemeManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/slur-bebop/slur-bebop/refs/heads/main/etc/theme'))()
 ThemeManager:SetLibrary(Library)
 ThemeManager:SetFolder('Bluu/Swordburst 2')
 ThemeManager:ApplyToTab(Settings)
 
-local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/main/LinoriaLib/addons/SaveManager.lua'))()
+local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/slur-bebop/slur-bebop/refs/heads/main/etc/save'))()
 SaveManager:SetLibrary(Library)
 SaveManager:SetFolder('Bluu/Swordburst 2')
 SaveManager:IgnoreThemeSettings()
