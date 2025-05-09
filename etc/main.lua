@@ -2766,12 +2766,12 @@ Menu:AddLabel('Menu keybind'):AddKeyPicker('MenuKeybind', { Default = 'End', NoU
 
 Library.ToggleKeybind = Options.MenuKeybind
 
-local ThemeManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/slur-bebop/slur-bebop/refs/heads/main/etc/theme'))()
+local ThemeManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/refs/heads/main/LinoriaLib/addons/ThemeManager.lua'))()
 ThemeManager:SetLibrary(Library)
 ThemeManager:SetFolder('Bluu/Swordburst 2')
 ThemeManager:ApplyToTab(Settings)
 
-local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/slur-bebop/slur-bebop/refs/heads/main/etc/save'))()
+local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/refs/heads/main/LinoriaLib/addons/SaveManager.lua'))()
 SaveManager:SetLibrary(Library)
 SaveManager:SetFolder('Bluu/Swordburst 2')
 SaveManager:IgnoreThemeSettings()
