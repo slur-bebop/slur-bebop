@@ -22,7 +22,7 @@ local sendWebhook = (function()
         if not string.match(url, '^https://discord') then return end
 
         body.content = ping and '@everyone' or nil
-        body.username = 'Bluu'
+        body.username = 'Moo deng'
         body.avatar_url = 'https://raw.githubusercontent.com/Neuublue/Bluu/main/Bluu.png'
         body.embeds = body.embeds or {{}}
         body.embeds[1].timestamp = DateTime:now():ToIsoDate()
@@ -216,7 +216,7 @@ end)()
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/main/LinoriaLib/Library.lua'))()
 
 local Window = Library:CreateWindow({
-    Title = 'Bluu 😳 Swordburst 2',
+    Title = 'butter bear lover',
     Center = true,
     AutoShow = true,
     Resizable = true,
