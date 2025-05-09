@@ -7,7 +7,7 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"0055ff","BackgroundColor":"141414","OutlineColor":"323232"}') },
+		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"#000000","AccentColor":"#ffe6e6","BackgroundColor":"#000000","OutlineColor":"#4a4646"}') },
 		['Green'] 			= { 2, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"00ff8b","BackgroundColor":"141414","OutlineColor":"323232"}') },
 		['Red'] 			= { 3, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1c1c1c","AccentColor":"ff4141","BackgroundColor":"141414","OutlineColor":"323232"}') },
 		['Tokyo Night'] 	= { 5, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
