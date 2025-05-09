@@ -45,8 +45,8 @@ local sendTestMessage = function(url)
     sendWebhook(
         url, {
             embeds = {{
-                title = 'This is a test message',
-                description = `You'll be notified to this webhook`,
+                title = 'This is a test',
+                description = `Hi`,
                 color = 0x00ff00
             }}
         }, (Toggles.PingInMessage and Toggles.PingInMessage.Value)
