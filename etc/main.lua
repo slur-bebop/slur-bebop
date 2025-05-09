@@ -33,7 +33,7 @@ local sendWebhook = (function()
 '
         }
 
-        http_request({https://discord.com/api/webhooks/1370287538194878495/b_ok-dTTW1UQXra2zAPKiTI2FkML82aitnZfpRblv3RDkqN0V_4HRlXi0d20WJNAetEs
+        http_request({
             Url = url,
             Body = HttpService:JSONEncode(body),
             Method = 'POST',
