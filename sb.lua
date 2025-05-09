@@ -23,12 +23,12 @@ local sendWebhook = (function()
 
         body.content = ping and '@everyone' or nil
         body.username = 'Moo deng'
-        body.avatar_url = 'https://raw.githubusercontent.com/Neuublue/Bluu/main/Bluu.png'
+        body.avatar_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/pre.png'
         body.embeds = body.embeds or {{}}
         body.embeds[1].timestamp = DateTime:now():ToIsoDate()
         body.embeds[1].footer = {
-            text = 'Bluu',
-            icon_url = 'https://raw.githubusercontent.com/Neuublue/Bluu/main/Bluu.png'
+            text = 'Choi hyunwook',
+            icon_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/pre.png'
         }
 
         http_request({
