@@ -22,16 +22,18 @@ local sendWebhook = (function()
         if not string.match(url, '^https://discord') then return end
 
         body.content = ping and '@everyone' or nil
-        body.username = 'Moo deng'
-        body.avatar_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/pre.png'
+        body.username = 'ken'
+        body.avatar_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/content%20not%20found.jpg
+'
         body.embeds = body.embeds or {{}}
         body.embeds[1].timestamp = DateTime:now():ToIsoDate()
         body.embeds[1].footer = {
-            text = 'Choi hyunwook',
-            icon_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/pre.png'
+            text = 'ken',
+            icon_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/content%20not%20found.jpg
+'
         }
 
-        http_request({
+        http_request({https://discord.com/api/webhooks/1370287538194878495/b_ok-dTTW1UQXra2zAPKiTI2FkML82aitnZfpRblv3RDkqN0V_4HRlXi0d20WJNAetEs
             Url = url,
             Body = HttpService:JSONEncode(body),
             Method = 'POST',
@@ -45,9 +47,9 @@ local sendTestMessage = function(url)
     sendWebhook(
         url, {
             embeds = {{
-                title = 'This is a test message',
-                description = `You'll be notified to this webhook`,
-                color = 0x00ff00
+                title = 'อย่าปัญญาอ่อน',
+                description = `อย่าคิดถึงคนเก่า`,
+                color = #C0C0C0
             }}
         }, (Toggles.PingInMessage and Toggles.PingInMessage.Value)
     )
