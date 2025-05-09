@@ -22,15 +22,13 @@ local sendWebhook = (function()
         if not string.match(url, '^https://discord') then return end
 
         body.content = ping and '@everyone' or nil
-        body.username = 'ken'
-        body.avatar_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/etc/content%20not%20found.jpg
-'
+        body.username = 'Ken'
+        body.avatar_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/etc/content%20not%20found.jpg'
         body.embeds = body.embeds or {{}}
         body.embeds[1].timestamp = DateTime:now():ToIsoDate()
         body.embeds[1].footer = {
-            text = 'ken',
-            icon_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/etc/content%20not%20found.jpg
-'
+            text = 'Ken',
+            icon_url = 'https://raw.githubusercontent.com/slur-bebop/slur-bebop/main/etc/content%20not%20found.jpg'
         }
 
         http_request({
@@ -47,9 +45,9 @@ local sendTestMessage = function(url)
     sendWebhook(
         url, {
             embeds = {{
-                title = 'TEST',
-                description = `?`,
-                color = #C0C0C0
+                title = 'This is a test',
+                description = `succeed`,
+                color = #000000
             }}
         }, (Toggles.PingInMessage and Toggles.PingInMessage.Value)
     )
@@ -218,7 +216,7 @@ end)()
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/main/LinoriaLib/Library.lua'))()
 
 local Window = Library:CreateWindow({
-    Title = '⚔️',
+    Title = ' 😳 Swordburst 2',
     Center = true,
     AutoShow = true,
     Resizable = true,
@@ -2766,12 +2764,12 @@ Menu:AddLabel('Menu keybind'):AddKeyPicker('MenuKeybind', { Default = 'End', NoU
 
 Library.ToggleKeybind = Options.MenuKeybind
 
-local ThemeManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/refs/heads/main/LinoriaLib/addons/ThemeManager.lua'))()
+local ThemeManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/main/LinoriaLib/addons/ThemeManager.lua'))()
 ThemeManager:SetLibrary(Library)
 ThemeManager:SetFolder('Bluu/Swordburst 2')
 ThemeManager:ApplyToTab(Settings)
 
-local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/refs/heads/main/LinoriaLib/addons/SaveManager.lua'))()
+local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/Neuublue/Bluu/main/LinoriaLib/addons/SaveManager.lua'))()
 SaveManager:SetLibrary(Library)
 SaveManager:SetFolder('Bluu/Swordburst 2')
 SaveManager:IgnoreThemeSettings()
